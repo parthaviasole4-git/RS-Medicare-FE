@@ -109,10 +109,6 @@ export class AuthStore {
       token: finalToken
     };
 
-    if (user.email && user.email.toLowerCase() === 'radheshyam.ongc.colony@gmail.com') {
-      role = 'admin';
-    }
-
     const next: AuthState = {
       user,
       token: finalToken,
